@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <form> 
+        <h1>Form</h1>
+        <div>
+          <label for="name" class="input">Name:</label>
+          <input class="inp" type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email" class="input">Email:</label>
+          <input class="inp" type="text" id="Email" name="email" required />
+        </div>
+        <div>
+          <label for="password" class="input">Password:</label>
+          <input class="inp" type="password" name="password" id="password" required />
+        </div>
+        <div>
+          <label for="confirm-password" class="input">Confirm Password:</label>
+          <input class="inp"
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="question">Gender:</label>
+          <label>
+            <div>
+            <input class="choice" type="radio" name="option" value="option1" />
+            Male
+          </label>
+
+          <label>
+            <input class="choice" type="radio" name="option" value="option2" />
+            Female
+          </label>
+
+          <label>
+            <input class="choice" type="radio" name="option" value="option3" />
+            Other
+          </label>
+          </div>
+        </div>
+        <div class="Chc">
+          <label for="question">interests:</label>
+            <div>
+          <label>
+            <input class="choice" type="checkbox" name="option" value="option1" />
+            Sports
+          </label>
+
+          <label>
+            <input class="choice" type="checkbox" name="option" value="option2" />
+            Music
+          </label>
+
+          <label>
+            <input class="choice" type="checkbox" name="option" value="option3" />
+            Travel
+          </label>
+            </div>
+        </div>
+        <div>
+          <label  for="dropdown">Country:</label>
+            <div>
+          <select class="drop" id="dropdown" name="dropdown">
+            <option value="option1">USA</option>
+            <option value="option2">Canada</option>
+            <option value="option3">Mexico</option>
+          </select>
+            </div>
+        </div>
+        <div>
+          <label for="slider">Choose a value:</label>
+            <div>
+          <input class="slider1" type="range" id="slider" name="slider" min="0" max="100" />
+            </div>
+          <p id="slider-value"> 50</p>
+        </div>
+
+        <input class="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
